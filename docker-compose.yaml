@@ -1,0 +1,10 @@
+---
+version: '3.7'
+services:
+  server:
+    image: rust-server:latest
+    container_name: rust-server
+    network_mode: host
+    ports:
+      - '8000:8000'
+    restart: unless-stopped
